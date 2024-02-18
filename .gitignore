@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Project files and the solution (we're using premake now so they aren't required)
+*.sln
+*.vcxitems
+*.vcxitems.*
+*.vcxproj
+*.vcxproj.*
+
 # User-specific files
 *.rsuser
 *.suo
@@ -17,17 +24,14 @@
 mono_crash.*
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
-x64/
-x86/
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/
+[Bb]in-int/
 [Oo]bj/
 [Oo]ut/
 [Ll]og/

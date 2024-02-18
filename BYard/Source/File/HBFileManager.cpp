@@ -1,6 +1,7 @@
 #include "HBFile.cpp"
-#include "HBPakV10.cpp"
-#include "HBPakV10File.cpp"
+#include "HBPak.cpp"
+#include "HBPakFile.cpp"
+
 namespace HBFileManager {
 	int OpenFilePak(char* szFileName, int eFlags, HBFile* pFileRef) {
 		HBPakV10File* pakV10File;

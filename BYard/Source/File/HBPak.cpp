@@ -1,5 +1,5 @@
 #include <iostream>
-#include "HBPakV10File.cpp";
+#include "HBPakFile.cpp";
 
 struct HBPakv10 {
 	char m_Magic[16];
