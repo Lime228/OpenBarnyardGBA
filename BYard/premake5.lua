@@ -7,6 +7,7 @@ project "BYard"
 	files
 	{
 		"Source/**.h",
+		"Source/**.hpp",
 		"Source/**.cpp",
 	}
 	
@@ -15,12 +16,6 @@ project "BYard"
 		"Source"
 	}
 	
-	postbuildcommands
-	{
-		"{COPYDIR} Data \"%{wks.location}bin/" .. outputdir .. "/%{prj.name}/Data\"",
-		"{COPYDIR} \"" .. ClientContentCommon  .. "\" \"%{wks.location}bin/" .. outputdir .. "/%{prj.name}/\"",
-		"{COPYDIR} \"" .. ClientContentArch    .. "\" \"%{wks.location}bin/" .. outputdir .. "/%{prj.name}/\"",
-	}
 
 	filter "system:windows"
 		systemversion "latest"
