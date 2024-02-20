@@ -1,3 +1,3 @@
-#include <iostream>
-#include "HBPakFile.cpp";
+#include "HBPak.hpp"
+#include "HBPakFile.hpp"
 
